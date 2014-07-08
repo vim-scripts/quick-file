@@ -1,0 +1,14 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4980
+
+Wonder how to locate and jump to file in vim real quick?
+Here is a solution. (It helps me a lot)
+
+:QF [part-of-file-name] [additional] [...]
+
+e.g.:
+abc.txt, efg.txt, sub/abc.txt, sub/sub2/efg.txt
+
+:QF abc // will jump to abc.txt
+:QF abc sub // will jump to sub/abc.txt
+:QF efg //will jump to efg.txt
+:QF hohoho //will stay put
