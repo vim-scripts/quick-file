@@ -7,12 +7,14 @@ NOTE: THIS REQUIRES VIM WITH PYTHON (but don't worry, I am sure your vim support
 
 http://github.com/zhchang/quick_file
 
-:QF [part-of-file-name] [additional] [...]
+:QF something my-folder my-sub-folder
 
-e.g.:
-abc.txt, efg.txt, sub/abc.txt, sub/sub2/efg.txt
+if you have wtf/wtf-my-folder-blahblah/wtf-my-sub-folder-blahblahblah/this-is-something-lol.py
 
-:QF abc // will jump to abc.txt
-:QF abc sub // will jump to sub/abc.txt
-:QF efg //will jump to efg.txt
-:QF hohoho //will stay put
+it will locate and open this-is-something-lol.py for editing in no time.
+
+All you need to jump to a file is to type a fragment of the filename, and optionally specify fragment of the folder that it resides in. The plugin will jump to the closest match and start editing it.(the more fragment you give, the preciser the match will be)
+
+a big productivity improver.
+
+Enjoy.
